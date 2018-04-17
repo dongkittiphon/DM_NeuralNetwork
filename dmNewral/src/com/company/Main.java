@@ -11,7 +11,7 @@ public class Main {
         int nodeInLay = 19;
         int nodeHidLay = 11;
         int nodeOutLay = 2;
-        double lernWeg = 0.3;
+        double lernWeg = 0.1;
 
         double[][] error = new double[data][nodeOutLay];
 
@@ -79,7 +79,7 @@ public class Main {
         double[][] inputHO;
         double[][] out = new double[nodeOutLay][data];
 
-        for (int f = 0; f < 50; f++) {
+        for (int f = 0; f < 100; f++) {
             boolean st = false;
             for (int i = 0; i < data; i++) {
 //                System.out.println("Round: " + (i + 1));
